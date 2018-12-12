@@ -69,7 +69,12 @@ body {
 #menu {
   float: right;
 } */
-
+.lgn-btn{
+  margin-top: 1em;
+}
+.lgn-btn >button {
+  color:green;
+}
 .games-section{
   margin-top: 3em;
   margin-bottom: 3em;
@@ -109,7 +114,66 @@ margin-left:50px;
 img {
     float: left;
 }
+.global-nav{
+  width: 100%;
+  height: 200px;
+}
+.nav-header{
+  width: 100%;
+  height:290px; 
+}
+.nav-list p{
+  display: inline;
+}
 
+nav {
+  position: relative;
+  width: 100%;
+  line-height: 60px;
+  padding-top: 1.5em;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  /* background: rgba(0, 0, 0, 0); */
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  /* text-align: right; */
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media(max-width: 786px) {
+
+  .nav ul {
+        max-height: 0px;
+        /* background: #000; */
+  }
+
+  .nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+}
+
+/* custom navbar */
 .custom-navbar{
   width:100%;
   height:290px;
@@ -180,13 +244,13 @@ header {
   letter-spacing: 2px;
 }
 
-nav {
-  position: fixed;
+.nav {
+  position: relative;
   width: 100%;
   line-height: 60px;
 }
 
-nav ul {
+.nav ul {
   line-height: 60px;
   list-style: none;
   /* background: rgba(0, 0, 0, 0); */
@@ -203,12 +267,12 @@ nav ul {
   background: #000;
 } */
 
-nav ul li {
+.nav ul li {
   display: inline-block;
   padding: 16px 40px;;
 }
 
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
@@ -250,7 +314,7 @@ nav ul li a {
         margin-top: 16px;
   }
 
-  nav ul {
+  .nav ul {
         max-height: 0px;
         /* background: #000; */
   }
@@ -263,7 +327,7 @@ nav ul li a {
         max-height: 34em;
   }
 
-  nav ul li {
+  .nav ul li {
         box-sizing: border-box;
         width: 100%;
         padding: 24px;
@@ -359,11 +423,89 @@ nav ul li a {
 .instruct-info{
   background: url("../assets/images/bg_howtoplay.png");
   height: 887px;
-  /* z-index: -1; */
+}
+.instruct-container{
+  padding-top: 2.8em;
+}
+.instruct-text{
+  width: 70%;
+  color: white;
+  margin:0 auto;
+  padding-top: 8em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.instruct-text h2{
+  font-size: 1.9em;
+}
+.instruct-text-sub{
+  color: white;
+  margin-top: 2em;
 }
 .instruct-info-img{
-  background: linear-gradient(rgba(206, 201, 201, 0.5), rgba(211, 205, 205, 0.5));
-  width: 80%;
-  height: 350px;
+  background: linear-gradient(rgba(206, 201, 201, 0.5), rgba(211, 205, 205, 0.5)), url("../assets/images/instruct-bg.jpeg");
+  width: 85%;
+  height: 500px;
   z-index: 1;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2em;
+}
+.right-arrow{
+  width: 16px;
+  margin-left: 1em;
+}
+.about h1{
+  color: #dae1ee;
+}
+.about-text-head{
+  margin-top: 3em;
+}
+.about-text-head > h1{
+  color: rgb(36, 35, 35);
+}
+.about-btn {
+  color: black !important;
+}
+.resources{
+  background: url("../assets/images/bg_subscribe.png");
+  height: 846px;
+  width: 100%;
+}
+.resource-container{
+  background: linear-gradient(to right, #375182 , #3d8878);
+  padding-top: 3em;
+  padding-bottom: 5em;
+  margin-top: 3em;
+}
+.resource-heading{
+  width: 65%;
+  overflow-wrap: break-word;
+  margin-left: 1em;
+  color: white
+}
+.resource-heading > h1 {
+  font-size: 3em;
+}
+.resource-heading h3{
+  font-size: 1.5em;
+}
+.resource-sub-text{
+  width: 60%;
+  overflow-wrap: break-word;
+  margin-left: 1em;
+  color: white;
+}
+.resource-container hr{
+  color: white;
+  width: 40%;
+  text-align: left;
+}
+.subscribe-container{
+  background-color: #112636;
+  margin-top: 13em;
+  color: white;
+  padding: 2em 1em 2em 1em;
+  overflow: none;
+  overflow-wrap: break-word;
 }
