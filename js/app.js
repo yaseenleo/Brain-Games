@@ -3,7 +3,9 @@ $(document).ready(function() {
           $("nav ul").toggleClass("showing");
     });
 });
-
+function openGraph(){
+  window.location.assign("pages/graph.html")
+}
 // Scrolling Effect
 
 $(window).on("scroll", function() {
@@ -18,20 +20,26 @@ $(window).on("scroll", function() {
 
 function genGraph(){
 
-var charData = []
-var ques1 = document.getElementsByName("ques1").value;
-console.log(ques1);
-console.log(ques1);
-
+  var ques1 = document.getElementsByName("ques1")[0].value;
+  var ques2 = document.getElementsByName("ques2")[1].value;
+  var ques3 = document.getElementsByName("ques3")[2].value;
+  var ques4 = document.getElementsByName("ques4")[2].value;
+  var ques5 = document.getElementsByName("ques5")[1].value;
+  console.log(ques1);
+  
+  var charData = []
+  
+  charData.push(ques1,ques2,ques3,ques4,ques5)
+  console.log(charData);
   //line
   var ctxL = document.getElementById("lineChart").getContext('2d');
   var myLineChart = new Chart(ctxL, {
     type: 'line',
     data: {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: ["1", "2", "3", "4", "5"],
       datasets: [{
-          label: "My First dataset",
-          data: [65, 59, 80, 81, 56, 55, 40],
+          label: "brain storm",
+          data: charData,
           backgroundColor: [
             'rgba(105, 0, 132, .2)',
           ],
@@ -41,8 +49,8 @@ console.log(ques1);
           borderWidth: 2
         },
         {
-          label: "My Second dataset",
-          data: [28, 48, 40, 19, 86, 27, 90],
+          label: "thinking",
+          data: [28, 48, 40, 19, 86],
           backgroundColor: [
             'rgba(0, 137, 132, .2)',
           ],
