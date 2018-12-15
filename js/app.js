@@ -15,10 +15,12 @@ $(window).on("scroll", function() {
           $('nav').removeClass('black');
     }
 })
+
+function genGraph(){
+
 var charData = []
 var ques1 = document.getElementsByName("ques1").value;
 console.log(ques1);
-ques1.push(charData);
 console.log(ques1);
 
   //line
@@ -55,3 +57,6 @@ console.log(ques1);
       responsive: true
     }
   });
+
+}
+

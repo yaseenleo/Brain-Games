@@ -20,80 +20,75 @@
 
     <div class="container-fluid">
         <div class="container">
-            <section class="questions">
-                <h1>Q1: Lorem ipsum dolor</h1>
-                <div class="options">
-                    <!-- Group of default radios - option 1 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques1a" name="ques1" value="5">
-                        <label class="custom-control-label" for="defaultGroupExample1">Lorem</label>
-                    </div>
+<form action="#">
+    <div class="form-group">
+        <h5>Q1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, ipsa at?</h5>
 
-                    <!-- Group of default radios - option 2 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques1b" name="ques1" value="10">
-                        <label class="custom-control-label" for="defaultGroupExample2">ipsum</label>
-                    </div>
+        <div >
+            <input type="radio"  id="ques1a" name="ques1" value="10">
+            <label  >Lorem</label>
+          </div>
 
-                    <!-- Group of default radios - option 3 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques1c" name="ques1" value="15">
-                        <label class="custom-control-label" for="defaultGroupExample3">dolor</label>
-                    </div>
-                </div>
-            </section>
+          <div >
+            <input type="radio"  id="ques1b" name="ques1" value="15">
+            <label  >ipsum</label>
+          </div>
 
-            <section class="questions">
-                <h1>Q2: Lorem ipsum dolor</h1>
-                <div class="options">
-                    <!-- Group of default radios - option 1 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques2a" name="ques2" value="5">
-                        <label class="custom-control-label" for="defaultGroupExample1">Lorem</label>
-                    </div>
-
-                    <!-- Group of default radios - option 2 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques2b" name="ques2" value="15">
-                        <label class="custom-control-label" for="defaultGroupExample2">ipsum</label>
-                    </div>
-
-                    <!-- Group of default radios - option 3 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques2c" name="ques2" value="10">
-                        <label class="custom-control-label" for="defaultGroupExample3">dolor</label>
-                    </div>
-                </div>
-            </section>
-
-            <section class="questions">
-                <h1>Q3: Lorem ipsum dolor</h1>
-                <div class="options">
-                    <!-- Group of default radios - option 1 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques3a" name="ques3" value="15">
-                        <label class="custom-control-label" for="defaultGroupExample1">Lorem</label>
-                    </div>
-
-                    <!-- Group of default radios - option 2 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques3b" name="ques3" value="10">
-                        <label class="custom-control-label" for="defaultGroupExample2">ipsum</label>
-                    </div>
-
-                    <!-- Group of default radios - option 3 -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="ques3c" name="ques3" value="5">
-                        <label class="custom-control-label" for="defaultGroupExample3">dolor</label>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <button class="btn btn-primary">submit</button>
+          <div >
+            <input type="radio"  id="ques1c" name="ques1" value="25">
+            <label  >dolor</label>
+          </div>
+          
     </div>
 
-    <canvas id="lineChart" style="max-width: 500px;"></canvas>
+    <div class="form-group">
+        <h5>Q1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, ipsa at?</h5>
+
+        <div >
+            <input type="radio"  id="ques2a" name="ques2" value="10">
+            <label  >Lorem</label>
+          </div>
+
+          <div >
+            <input type="radio"  id="ques2b" name="ques2" value="35">
+            <label  >ipsum</label>
+          </div>
+
+          <div >
+            <input type="radio"  id="ques2c" name="ques2" value="25">
+            <label  >dolor</label>
+          </div>
+          
+    </div>
+
+    <div class="form-group">
+        <h5>Q1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, ipsa at?</h5>
+
+        <div >
+            <input type="radio"  id="ques3a" name="ques3" value="10">
+            <label  >Lorem</label>
+          </div>
+
+          <div >
+            <input type="radio"  id="ques3b" name="ques3" value="20">
+            <label  >ipsum</label>
+          </div>
+
+          <div >
+            <input type="radio"  id="ques3c" name="ques3" value="25">
+            <label  >dolor</label>
+          </div>
+          
+    </div>
+    <button class="btn btn-primary" onclick="genGraph()">submit</button>
+
+</form>
+
+        </div>
+
+    </div>
+
+    <canvas id="lineChart" style="max-width: 500px; display: none"></canvas>
 </body>
 
 <!-- SCRIPTS -->
