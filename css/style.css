@@ -510,3 +510,84 @@ header {
   overflow: none;
   overflow-wrap: break-word;
 }
+
+/* resources */
+.feature-arti{
+  background-color: #112636;
+  margin-top: -10px;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.resources-head-bg{
+  background: url("../assets/images/header_bg_games_resources.png")
+}
+.header-text > h1{
+  font-size: 3.5em;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.fa-search {
+  color: #eee;
+  font-size: 3em;
+}
+.fa-search:hover {
+  color: #eee;
+  font-size: 4em;
+  cursor: pointer;
+}
+.feature-arti-text{
+  color: white;
+  margin-top: 1em;
+}
+.feature-arti-text> h1{
+  /* font-size: 1.5em; */
+  font-weight: 500;
+}
+.feature-arti-text> p{
+  /* font-size: 1.5em; */
+  line-height: 1.5em;
+}
+.article-context-container{
+  background-color: #4b6eb0;
+  padding: 4em 0em;
+}
+
+.article-context-container figcaption{
+  color: white;
+  padding: 0 1em;
+  font-size: 1em;
+}
+.article-context-container figcaption button{
+  color: #72ea7c;
+  font-weight: bold;
+}
+.article-content{
+  padding: 2em 0;
+  display: block;
+  position: relative;
+}
+
+.article-video-container{
+  background: url("../assets/images/bg_videos_resources.png") no-repeat;
+  background-size: cover;
+}
+.article-video-container h1{
+  margin-top: 2em;
+  padding-top: 1em;
+  color: #45639c;
+  font-size: 4em;
+  font-weight: bold;
+}
+.video-content{
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 4em 0em;
+}
+.video-context> h2{
+  text-align: center;
+  margin-top: 0.5em;
+  font-weight: 400;
+}
