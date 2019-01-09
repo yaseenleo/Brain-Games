@@ -68,3 +68,19 @@ function genGraph(){
 
 }
 
+// user data input
+var gender = document.getElementsByName("gender");
+  for (var i = 0; i < gender.length; i++) {
+    if (gender[i].checked) {
+      console.log("radioButton " + i + ": " + gender[i].value);
+      gender = gender[i].value;
+      console.log(gender)
+
+      if(gender.value >= 18) {
+        window.location.assign("pages/graph.html")
+      }
+      else{
+        alert("development in process");
+      }
+    }
+  }

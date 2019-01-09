@@ -591,3 +591,28 @@ header {
   margin-top: 0.5em;
   font-weight: 400;
 }
+.game-text{
+  text-align: center;
+  margin-top: 5em
+}
+.game-text> h1{
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+.game-text > h2 {
+  font-size: 2em;
+  color: #354755;
+  margin-bottom: 0.8em;
+}
+/* .game-text ul>li {
+  list-style: none;
+} */
+.game-text-list{
+  text-align: left;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+.option-list{
+  margin-top: 2em;
+}
