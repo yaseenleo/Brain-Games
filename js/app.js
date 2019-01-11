@@ -70,8 +70,10 @@ function genGraph() {
 
 // user data input
 
-var gamepage = document.getElementById("gamepage");
-gamepage.addEventListener('click', () => {
+function gamepage() {
+
+  // var gamepage = document.getElementById("gamepage");
+  // gamepage.addEventListener('click', () => {
 
   let name = document.getElementById("name").value;
   let fatherName = document.getElementById("fname").value;
@@ -89,20 +91,24 @@ gamepage.addEventListener('click', () => {
   let phoneNumber = document.getElementById("phoneNumber").value;
 
 
-  if ((name === "" || fatherName === "" || email === "") || (name === " " || fatherName === " " || email === " ") || age <18) {
+  if ((name === "" || fatherName === "" || email === "") || (name === " " || fatherName === " " || email === " ") || age < 18) {
     swal("Sorry!", "Under 18 game is in develpment process", "info");
   }
   else {
     window.location.assign("pages/graph.html");
 
   }
-console.log(age)
+  console.log(age)
 
-})
-
+  // })
+}
 // game start
 
-function gameStart() {
+var intro = document.getElementById("game-intro").style.display = "block"
+var ques1 = document.getElementById("qsec1").style.display = "none"
+function startGame() {
+  intro = document.getElementById("game-intro").style.display = "none";
+  ques1 = document.getElementById("qsec1").style.display = "block"
 
-  
+
 }

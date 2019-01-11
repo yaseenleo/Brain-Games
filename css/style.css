@@ -616,3 +616,28 @@ header {
 .option-list{
   margin-top: 2em;
 }
+.game-info{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.character-m{
+  position: absolute;
+  display: block;
+  top: 370px;
+  right: 800px;
+  animation: slide 8s forwards ;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate(900px, 0);
+  }
+  100%{
+    transform: translate3d(-20px);
+  }
+
+}
+ 
