@@ -423,6 +423,7 @@ header {
 }
 .instruct-container{
   padding-top: 2.8em;
+  padding-left: 5em;
 }
 .instruct-text{
   width: 70%;
@@ -440,13 +441,14 @@ header {
   margin-top: 2em;
 }
 .instruct-info-img{
-  background: linear-gradient(rgba(206, 201, 201, 0.5), rgba(211, 205, 205, 0.5)), url("../assets/images/instruct-bg.jpeg");
+  /* background: linear-gradient(rgba(206, 201, 201, 0.5), rgba(211, 205, 205, 0.5)), url("../assets/images/instruct-bg.jpeg"); */
   width: 85%;
   height: 500px;
   z-index: 1;
   margin: 0 auto;
   display: block;
   margin-top: 2em;
+  margin-left: 4em !important
 }
 .right-arrow{
   width: 16px;
